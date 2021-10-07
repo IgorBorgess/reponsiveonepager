@@ -1,0 +1,307 @@
+@charset "UTF-8";
+/* Formatação das fontes primárias da página*/
+html{
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Oxygen", Arial;
+}
+
+.maxwidth{
+    max-width: 1600px;
+    margin: auto;
+}
+
+/* Formatação das fontes primárias da página*/
+
+/* Formatação do Header*/
+.top-header{
+    text-align: center;
+}
+
+.top-header-logo{
+    margin: .5em;
+}
+
+.top-nav{
+    background-color: #612674;
+    text-align: center;
+}
+
+.top-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top-nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.top-nav a:hover{
+    background: #7c3792;
+}
+/* Formatação do Header*/
+
+/*Formatação da Primeira Seção*/
+.top-content{
+    text-align: center;
+    padding: 1em;
+    background: #f6f6f6
+}
+
+.icon-play{
+    height: 5em;
+    display: none;
+}
+
+.icon-play img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.top-content-title{
+    color: #612674;
+    font-size: 1.375em;
+    margin: 1.375em;
+}
+
+.top-content-subtitle{
+    color: #a87bb7;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.middle-content{
+    padding: 2em;
+    background: #f6f6f6;
+    text-align: center;
+}
+
+.middle-content-title{
+    font-size: 1.25em;
+    color: #652e78;
+    text-transform: uppercase;
+}
+
+.middle-content p{
+    line-height: 1.5;
+    color: #222;
+}
+/*Formatação da Primeira Seção*/
+
+
+/*Formatação da Segunda Seção*/
+.main-content{
+    padding: 2em;
+}
+
+.main-content-article{
+    margin-bottom: 3.5em;
+}
+
+.main-content-title{
+    font-size: 1.25em;
+    color: #652e78;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+.main-content p{
+    line-height: 1.2;
+}
+/*Formatação da Segunda Seção*/
+
+/*Formatação do Footer*/
+.footer{
+    background: #25303e;
+    color: #83969f;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.footer-menushare{
+    background: #303d4c;
+    padding: .5em;
+}
+
+.footer-menushare li{
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.footer-menushare a{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+}
+/*Formatação do Footer*/
+
+/*Formatação dos Botões*/
+.button{
+    display: inline-block;
+    padding: 1em 2.5em;
+    background-color: #58c4c4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background-color: #37a0a0;
+}
+/*Formatação dos Botões*/
+
+/*Formatação dos Ícones*/
+.middle-content span[class^=icon]{
+    font-size: 3.5em;
+    color: #652e78;
+}
+
+.hidden{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    display: block
+}
+/*Formatação dos Ícones*/
+
+/*Utilidades*/
+.clearfix:after, .row:after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+/*Utilidades*/
+
+
+/*Formatação da Media Querie de 780px*/
+@media screen and (min-width: 48.75em){
+
+/* Formatação do Header*/
+.top-header-logo{
+    float: left;
+}
+
+.top-nav{
+    background: transparent;
+    float: right;
+    margin-top: 1.8em;
+}
+
+.top-nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav li{
+    display: inline-block;
+}
+
+.top-nav a{
+    color: #713a84;
+    font-weight: bold;
+}
+
+.top-nav a:hover{
+    background: #e7d9fc;
+}
+
+.top-content{
+    background: #521a66;
+    color: white;
+}
+
+.icon-play{
+    height: 5em;
+    display: block;
+}
+
+.top-content-title, .top-content-subtitle{
+    background: #521a66;
+    color: white;
+}
+/* Formatação do Header*/
+
+/*Formatação da Primeira Seção*/
+.col-1_4{
+    width: 44%;
+    margin: 3%;
+    float: left;
+}
+/*Formatação da Primeira Seção*/
+
+/*Formatação da Segunda Seção*/
+.main-content-article .button{
+    float:right;
+}
+/*Formatação da Segunda Seção*/
+}
+
+/*Formatação da Media Querie de 1000px*/
+
+@media screen and (min-width: 62.5em){
+
+/* Formatação do Header*/
+.top-content{
+    background-color: #521a66;
+    background-image: url(../images/bg_topo_1198x670.jpg);
+    background-position: center bottom;
+    height: 20em;
+    padding-top: 17em;
+}
+
+.top-content-title{
+    background-color: transparent;
+}
+
+.top-content-subtitle{
+    background-color: transparent;
+}
+}
+/* Formatação do Header*/
+
+/*Formatação da Media Querie de 1000px*/
+
+/*Formatação da Media Querie de 1024px*/
+
+@media screen and (min-width: 74em){
+
+/* Formatação do Header*/
+.top-content{
+    background-image: url(../images/bg_topo_1600x1374.jpg);
+    width: 60em;
+    margin: auto;
+    padding: 19em 20em 10em;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.icon-play{
+    height: 7em;
+}
+/* Formatação do Header*/
+
+/*Formatação da Primeira Seção*/
+.col-1_4{
+    width: 23%;
+    margin: 1%;
+}
+/*Formatação da Primeira Seção*/
+
+/*Formatação da Segunda Seção*/
+.col-1_2{
+    width: 48%;
+    margin: 1%;
+    float: left;
+}
+
+.main-content-article .button{
+    float: none;
+}
+/*Formatação da Segunda Seção*/
+}
